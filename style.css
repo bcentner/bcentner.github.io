@@ -102,7 +102,7 @@ input, select {
 }
 /* END RESIZE CODE */
 
-h1 {
+.main-header {
 	color: blue;
 	font-size: 100px;
 	margin: 0px;
