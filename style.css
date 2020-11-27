@@ -51,3 +51,7 @@ ul li a {
 	font-family: arial;
 	color: #1e1e1e;
 }
+
+ul li a:hover { 
+        color: red;
+}
