@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #eee;
+	background-color: RGB(35,43,43);
 }
 
 .wrapper {
@@ -23,11 +23,12 @@ h1 {
 	font-size: 22px;
 	font-style: oblique;
 	font-weight: 500;
+	color: #F5F5F5;
 }
 
 .main-header {
         font-family: 'Playfair Display SC', serif;
-	color: blue;
+	color: #FFFFFF;
         font-size: 100px;
         font-weight: 900;
 	margin: 0px;
@@ -36,6 +37,7 @@ h1 {
 
 p {
 	text-align: justify;
+	color: #d3d3d3
 }
 
 ul {
