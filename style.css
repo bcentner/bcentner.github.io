@@ -5,7 +5,8 @@ h1 {
 	font-weight: 500;
 }
 .main-header {
-        color: blue;
+        font-family: 'Playfair Display SC', serif;
+	color: blue;
         font-size: 100px;
         font-weight: 900;
 	margin: 0px;
