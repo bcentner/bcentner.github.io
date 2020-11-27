@@ -1,6 +1,17 @@
+h1 {
+	font-family: arial, "Times New Roman";
+	font-size: 22px;
+	font-style: oblique;
+	font-weight: 500;
+}
 .main-header {
         color: blue;
         font-size: 100px;
-        margin: 0px;
+        font-weight: 900;
+	margin: 0px;
         text-align: center;
+}
+p {
+	text-align: justify;
+	
 }
