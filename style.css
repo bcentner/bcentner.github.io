@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+.img-profile {
+width: 300px;
+
+}
+
 body {
 	background-color: RGB(35,43,43);
 }
