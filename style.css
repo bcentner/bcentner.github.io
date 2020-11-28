@@ -110,5 +110,14 @@ ul li a:hover {
 	background-color: #fff;
 	border: 1px solid #673AB7;
 	color: #673AB7 !important;
+	text-decoration: none;
 	box-shadow: 0 0.05em 0.1em rgba(0,0,0,.25);
+}
+
+.blog-post-read-more a:hover{
+	transition: .5s;
+	background-color: #673AB7;
+	border: 1px solid #67AB7;
+	color: #fff !important;
+	text-decoration: none;
 }
