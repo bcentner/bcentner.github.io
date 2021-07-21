@@ -1,26 +1,85 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Zen Loop', cursive;
-}
-
-header {
-    position: relative;
-    left: 0;
+﻿.fullscreen-bg {
+    position: fixed;
     top: 0;
-    width: 100%;
-    height: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
-    header h4 {
-        position: absolute;
-        left: 10%;
-        bottom: 1rem;
-        font-size: 1.6rem;
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+/*BEING BUTTON*/
+a.button1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+    a.button1:hover {
+        color: #000000;
+        background-color: #FFFFFF;
     }
 
+@media all and (max-width:30em) {
+     a.button1 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+/*END BUTTON*/
+
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+    }
+}
+    
 /* splash screen*/
+/*
 .intro {
     position: fixed;
     z-index: 1;
@@ -58,65 +117,5 @@ header {
         opacity: 0;
         transition: ease-in-out 0.5s;
     }
-
+    */
 /*end splash*/
-
-/*VIDEO */
-
-video{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-/*END VIDEO*/
-/*BEING BUTTON*/
-
-viewport{
-    position: relative;
-    height: 100vh;
-
-}
-
-a.button1 {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #A9A9A9;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 12px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 300;
-    color: #A9A9A9;
-    text-align: center;
-    transition: all 0.2s;
-}
-
-    a.button1:hover {
-        color: #000000;
-        background-color: #FFFFFF;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    }
-
-@media all and (max-width:30em) {
-    a.button1 {
-        display: block;
-        margin: 0.4em auto;
-    }
-}
-
-
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-/*END BUTTON*/

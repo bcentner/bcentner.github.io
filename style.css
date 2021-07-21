@@ -5,6 +5,14 @@
 	font-family: 'Zen Loop', cursive;
 }
 
+header {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 80px;
+}
+
 
 .img-profile {
 width: 300px;
