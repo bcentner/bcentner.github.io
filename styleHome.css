@@ -1,0 +1,43 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.leftPane {
+    width: 33%;
+    height: 100%;
+    float: left;
+    background-color: #9D4B26;
+    border-collapse: collapse;
+}
+
+.midPane {
+    width: 33%;
+    height: 100%;
+    float: left;
+    background-color: #36659A;
+    border-collapse: collapse;
+}
+
+.rightPane {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: #00766C;
+    border-collapse: collapse;
+}

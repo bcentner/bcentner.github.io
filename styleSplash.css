@@ -18,30 +18,41 @@
 
 .center {
     position: fixed;
-    top: 50%;
+    top: 75%;
     left: 50%;
 }
 
 /*BEING BUTTON*/
 a.button1 {
     display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
+    padding: .6em 1.3em;
+    /*border: .15em solid #000000;*/
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
+    /*border-radius: 0.12em;*/
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #000000;
+    background: #FFFFFF;
     text-align: center;
-    transition: all 0.2s;
+  /*  transition: all 0.2s;*/
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
 
     a.button1:hover {
         color: #000000;
-        background-color: #FFFFFF;
+        background-color: #C0C0C0;
     }
+
+a.button:active {
+    background-color: #C0C0C0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
 @media all and (max-width:30em) {
      a.button1 {
