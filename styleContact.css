@@ -19,8 +19,8 @@ header {
 
 .text {
     position: absolute;
-    top: 16%;
-    right: 77%;
+    top: 15%;
+    right: 50%;
     transform: translate(50%,-50%);
     text-transform: uppercase;
     font-family: verdana;
