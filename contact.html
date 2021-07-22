@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="reformat.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleContact.css">
 	</head>
 	<body>
 		<a href="home.html">Home</a>
@@ -15,24 +15,49 @@
 		<a href="contact.html">Contact</a>
 
 		<span class="text">Contact Me</span>
-		<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-			<label for="Name" class="fcf-label">Your name</label>
-			<div class="fcf-input-group">
-				<input type="text" id="Name" name="Name" class="fcf-form-control" required>
-			</div>
-			<div class="fcf-form-group">
-				<label for="Email" class="fcf-label">Your email address</label>
-				<div class="fcf-input-group">
-					<input type="email" id="Email" name="Email" class="fcf-form-control" required>
-				</div>
-				<div class="fcf-form-group">
-					<label for="Message" class="fcf-label">Your message</label>
-					<div class="fcf-input-group">
-						<textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-					</div>
-				</div>
-				<div class="fcf-form-group">
-					<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-				</div>
+
+
+		<form class="contact1-form">
+			<label for="name">Name: </label><br>
+			<input type="text" id="name" name="name" value="Neo Smith"><br>
+			<label for="email">E-mail: </label><br>
+			<input type="text" id="email" name="email" value="NeoSmith@email.domain"><br>
+
+			<label for="subject">Subject: </label><br> 
+			<input type="text" id="subject" name="subject" value="Subject"><br><br>
+
+			<input type="submit" value="Submit">"
+		</form>
+
+		<script>
+            $('.contact1-form').on('submit', function (e) {
+                //optional validation code here
+
+                e.preventDefault();
+
+                $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbxATBWDTfPp2_lVvOo_6BMgWvXbvrFDnTr7nQncCAEOt09noJmqiQrPP6QBbAFbJH6P/exec",
+                    method: "POST",
+                    dataType: "json",
+                    data: $(".contact1-form").serialize(),
+                    success: function (response) {
+
+                        if (response.result == "success") {
+                            $('.contact1-form')[0].reset();
+                            alert('Thank you for contacting us.');
+                            return true;
+                        }
+                        else {
+                            alert("Something went wrong. Please try again.")
+                        }
+                    },
+                    error: function () {
+
+                        alert("Something went wrong. Please try again.")
+                    }
+                })
+            });
+		</script>
+
 	</body>
 </html>
