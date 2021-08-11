@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Letterboxd",
-    "\\Media"
+    "\\Movie Recommender",
+    "\\Movie Recommender\\Web Scraper"
   ],
-  "SelectedNode": "\\reformat.css",
+  "SelectedNode": "\\Movie Recommender\\Web Scraper\\scraperCopy.py",
   "PreviewInSolutionExplorer": false
 }
