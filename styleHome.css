@@ -14,25 +14,24 @@ header {
 }
 
 .leftPane {
-    width: 33%;
+    width: 33.3333333333%;
     height: 100%;
-    float: left; 
+    float: left;
+    border-collapse: collapse;
 }
 
 .midPane {
-    width: 33%;
+    width: 33.3333333333%;
     position: relative;
     height: 100%;
     float: left;
-    background-color: #36659A;
     border-collapse: collapse;
 }
 
 .rightPane {
-    width: 33%;
+    width: 33.3333333333%;
     height: 100%;
     position: relative;
     float: left;
-    background-color: #00766C;
     border-collapse: collapse;
 }
