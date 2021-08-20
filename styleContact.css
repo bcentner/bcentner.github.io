@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #c4c4c4;
+    font-family: 'Mongolian Baiti', sans-serif;
+    background-color: #3769A2;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
 }
 
 .text {
+    margin-top: 5rem;
     position: absolute;
     top: 15%;
     right: 50%;
