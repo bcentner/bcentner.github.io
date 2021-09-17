@@ -17,6 +17,10 @@ header {
     width: 100%;
     height: 80px;
 }
+body {
+    font-family: 'Mongolian Baiti', sans-serif;
+    background-color: #3769A2;
+}
 
 .text {
     margin-top: 5rem;
