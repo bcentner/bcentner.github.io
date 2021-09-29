@@ -22,6 +22,17 @@ body {
     background-color: #3769A2;
 }
 
+.c {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.rest {
+    padding-left: 25rem;
+    font-size: 1.8rem;
+    color: #2F4F4F;
+}
+
 .text {
     margin-top: 5rem;
     position: absolute;

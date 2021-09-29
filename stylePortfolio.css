@@ -16,6 +16,10 @@ body {
     background-color: #18222d;
 }
 
+.clr {
+    color: white;
+}
+
 .grid {
     width: 100%;
     max-width: 60rem;
